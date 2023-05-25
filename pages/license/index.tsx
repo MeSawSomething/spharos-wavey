@@ -1,5 +1,5 @@
 import React, { use, useState } from "react";
-import { useRouter } from "next/router";
+import router, { useRouter } from "next/router";
 import SimpleBackLayout from "@/components/layouts/simpleBack/SimpleBackLayout";
 import BottomFixedContainer from "@/components/layouts/BottomFixedContainer";
 import Button from "@/components/ui/Button";
@@ -20,6 +20,7 @@ export default function License() {
   // }
 
   const handleRegister = () => {
+    router.push(`/purchase`)
     // console.log(extractIdForBookPage);
     // sessionStorage.getItem("userLicense")
     //   ? handleOpenBookPage()
